@@ -7,13 +7,9 @@
 
 <title>Inauguration of Tawanda Kaseke as Sabhuku, Nyika Village</title>
 
-<meta
-  name="description"
-  content="Inauguration of Tawanda Kaseke as Sabhuku, Nyika Village. Programme, directions, village profile, health and wellness, and community information."
->
+<meta name="description" content="Inauguration of Tawanda Kaseke as Sabhuku of Nyika Village on Friday 28 August 2026 at Tawanda Kaseke Homestead, Goromonzi District. Programme, directions, village profile, guest WiFi and community information.">
 
 <style>
-
 :root{
   --green:#173a2f;
   --dark:#0f2a21;
@@ -60,7 +56,7 @@ body{
 }
 
 
-/* Shona rock-art inspired background */
+/* Subtle Shona rock-art inspired background */
 
 body:before{
   content:"";
@@ -68,7 +64,7 @@ body:before{
   inset:0;
   pointer-events:none;
   z-index:-1;
-  opacity:.16;
+  opacity:.14;
 
   background-image:
     url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='340' height='340' viewBox='0 0 340 340'><g fill='none' stroke='%23876131' stroke-width='2' stroke-linecap='round'><path d='M38 72c19-12 34-12 53 0m-48 22c16-9 29-9 45 0m-22-42v64'/><path d='M140 66l21-10 21 10-21 10-21-10zm21 10v35'/><circle cx='266' cy='78' r='15'/><path d='M251 78h30M266 63v30'/><path d='M58 201c18-18 43-18 61 0m-55 25c15-10 33-10 48 0'/><path d='M184 201c12 0 21 9 21 21s-9 21-21 21-21-9-21-21 9-21 21-21z'/><path d='M251 200c20-13 38-13 58 0m-53 24c16-9 31-9 47 0'/><path d='M64 290l21-11 21 11-21 11-21-11zm21 11v32'/></g></svg>");
@@ -93,7 +89,7 @@ header{
   top:0;
   z-index:50;
 
-  background:rgba(255,253,249,.92);
+  background:rgba(255,253,249,.93);
   backdrop-filter:blur(12px);
 
   border-bottom:1px solid rgba(23,58,47,.08);
@@ -117,9 +113,12 @@ nav{
 
 .brand small{
   display:block;
+
   font-size:.68rem;
+
   text-transform:uppercase;
   letter-spacing:.12em;
+
   color:#907341;
 }
 
@@ -151,12 +150,18 @@ nav{
   background:rgba(23,58,47,.07);
 }
 
+.links .map-link{
+  background:var(--green);
+  color:white;
+}
+
 
 /* HERO */
 
 .hero{
   position:relative;
   overflow:hidden;
+
   color:white;
 
   background:
@@ -261,7 +266,6 @@ h1 em{
   min-height:48px;
 
   display:inline-flex;
-
   align-items:center;
   justify-content:center;
 
@@ -312,6 +316,29 @@ h1 em{
   color:#d7dfda;
 }
 
+.venue-line{
+  margin:15px 0;
+
+  padding:13px 14px;
+
+  border-radius:15px;
+
+  background:rgba(255,255,255,.09);
+}
+
+.venue-line small{
+  display:block;
+
+  margin-bottom:2px;
+
+  text-transform:uppercase;
+  letter-spacing:.12em;
+
+  color:var(--gold2);
+
+  font-weight:800;
+}
+
 .quick{
   display:grid;
 
@@ -348,7 +375,7 @@ section{
 }
 
 .heading{
-  max-width:760px;
+  max-width:780px;
 
   margin-bottom:30px;
 }
@@ -380,7 +407,7 @@ h2{
 }
 
 .card{
-  background:rgba(255,255,255,.82);
+  background:rgba(255,255,255,.84);
 
   border:1px solid var(--line);
 
@@ -408,7 +435,6 @@ h2{
   position:absolute;
 
   right:-5px;
-
   bottom:-55px;
 
   font-size:8rem;
@@ -420,7 +446,6 @@ h2{
 
 .lead{
   position:relative;
-
   z-index:2;
 
   margin:0;
@@ -437,7 +462,6 @@ h2{
 
 .stats{
   position:relative;
-
   z-index:2;
 
   display:grid;
@@ -527,6 +551,62 @@ h2{
   margin:0;
 
   color:var(--muted);
+}
+
+
+/* DIASPORA */
+
+.diaspora-card{
+  margin-top:16px;
+
+  padding:30px;
+
+  display:grid;
+
+  grid-template-columns:
+    .75fr
+    1.25fr;
+
+  gap:28px;
+
+  align-items:center;
+
+  background:
+    radial-gradient(
+      circle at 85% 20%,
+      rgba(199,162,91,.14),
+      transparent 18rem
+    ),
+    linear-gradient(
+      135deg,
+      #173a2f,
+      #214a3b
+    );
+
+  color:white;
+}
+
+.diaspora-card h3{
+  margin:8px 0 0;
+
+  font-family:Georgia,serif;
+
+  color:white;
+
+  font-size:
+    clamp(1.8rem,4vw,3rem);
+
+  line-height:1.05;
+}
+
+.diaspora-card p{
+  margin:0;
+
+  color:#d8e0dc;
+}
+
+.diaspora-card .eyebrow{
+  color:var(--gold2);
 }
 
 
@@ -733,9 +813,6 @@ h2{
 .mapbox p{
   color:#d3ddd7;
 }
-
-
-/* DIRECTION ASSISTANCE */
 
 .contact-panel{
   margin-top:18px;
@@ -994,7 +1071,8 @@ footer small{
   .hero-grid,
   .programme,
   .direction-grid,
-  .connect{
+  .connect,
+  .diaspora-card{
     grid-template-columns:1fr;
   }
 
@@ -1013,7 +1091,7 @@ footer small{
 
 @media(max-width:700px){
 
-  .links a:not(.keep){
+  .links a:not(.map-link){
     display:none;
   }
 
@@ -1053,13 +1131,10 @@ footer small{
   }
 
 }
-
 </style>
 </head>
 
-
 <body>
-
 
 <header>
 
@@ -1074,7 +1149,6 @@ Nyika Village
 28 August 2026
 </small>
 </a>
-
 
 <div class="links">
 
@@ -1095,7 +1169,7 @@ Connect
 </a>
 
 <a
-class="keep"
+class="map-link"
 href="https://maps.app.goo.gl/gQBqSuExSgi56f7M7"
 target="_blank"
 rel="noopener"
@@ -1108,7 +1182,6 @@ Map ↗
 </nav>
 
 </header>
-
 
 
 <main>
@@ -1169,9 +1242,7 @@ Discover Our Village
 
 </div>
 
-
 </div>
-
 
 
 <aside class="event-card">
@@ -1203,12 +1274,21 @@ Friday • Programme starts at 10:00 AM
 </p>
 
 
-<p>
+<div class="venue-line">
 
-Nyika Village,
-Goromonzi District
+<small>
+Venue
+</small>
 
-</p>
+<strong>
+Tawanda Kaseke Homestead
+</strong>
+
+<br>
+
+Nyika Village, Goromonzi District
+
+</div>
 
 
 <div class="quick">
@@ -1237,7 +1317,6 @@ Have Your Say
 </a>
 
 </div>
-
 
 </aside>
 
@@ -1275,8 +1354,9 @@ Nyika is not starting from zero.
 
 It already has people, productive land,
 water, livestock, household enterprise,
-infrastructure and a strong connection
-between families and their village.
+infrastructure and strong ties between
+families, the village and those connected
+to Nyika beyond its borders.
 
 </p>
 
@@ -1318,7 +1398,6 @@ households forming the village community
 </div>
 
 
-
 <div class="stat">
 
 <b>
@@ -1331,7 +1410,6 @@ youth and infants
 </span>
 
 </div>
-
 
 
 <div class="stat">
@@ -1348,7 +1426,6 @@ productive activity
 </div>
 
 
-
 <div class="stat">
 
 <b>
@@ -1361,7 +1438,6 @@ across the village
 </span>
 
 </div>
-
 
 
 <div class="stat">
@@ -1379,7 +1455,6 @@ and rural WiFi
 
 
 </div>
-
 
 </div>
 
@@ -1460,7 +1535,7 @@ prevention, wellbeing and access to trusted
 health information and services.
 
 Community-based health and wellness outreach
-can help improve awareness, early intervention,
+can support awareness, early intervention,
 maternal and child wellbeing, prevention and
 connections to formal health services.
 
@@ -1499,6 +1574,52 @@ community identity.
 </p>
 
 </article>
+
+
+</div>
+
+
+
+<div
+class="card diaspora-card"
+id="diaspora"
+>
+
+
+<div>
+
+<div class="eyebrow">
+One Village, Near and Far
+</div>
+
+
+<h3>
+
+The Nyika diaspora
+remains part of the village.
+
+</h3>
+
+</div>
+
+
+<p>
+
+Nyika's community extends beyond its physical
+boundaries.
+
+Family members, friends and people connected
+to the village in Harare, elsewhere in Zimbabwe
+and across the diaspora can contribute skills,
+ideas, networks, equipment, professional expertise
+and resources.
+
+The principle is simple: development remains
+locally prioritised and community-led, while the
+wider Nyika network helps accelerate practical,
+sustainable projects.
+
+</p>
 
 
 </div>
@@ -1690,8 +1811,8 @@ Health & Wellness
 
 Community health, prevention,
 wellness and outreach initiatives
-that improve access to trusted
-information and appropriate services.
+improving access to trusted information
+and appropriate services.
 
 </p>
 
@@ -1728,14 +1849,14 @@ and community participation.
 </div>
 
 <h3>
-Local Solutions
+Diaspora & Partnerships
 </h3>
 
 <p>
 
-Development designed with villagers,
-family, diaspora, institutions
-and partners.
+Development shaped with villagers,
+families, the Nyika diaspora,
+institutions, friends and development partners.
 
 </p>
 
@@ -1773,7 +1894,8 @@ simple ceremony.
 
 <p>
 
-Formal proceedings begin at 10:00 AM.
+Formal proceedings begin at 10:00 AM
+at Tawanda Kaseke Homestead.
 
 The programme remains respectful
 of customary protocol and may be refined
@@ -1972,12 +2094,15 @@ Directions
 <h2>
 
 Travelling from Harare
-to Nyika Village.
+to Tawanda Kaseke Homestead.
 
 </h2>
 
 
 <p>
+
+The venue is at Tawanda Kaseke Homestead,
+Nyika Village, Goromonzi District.
 
 Use Google Maps for the final approach
 or follow the simple route below.
@@ -2008,6 +2133,7 @@ Mutare Road through Ruwa.
 <li>
 
 Approximately 5 km after Ruwa,
+
 <strong>
 turn LEFT at the Goromonzi turn-off.
 </strong>
@@ -2026,9 +2152,11 @@ towards Goromonzi.
 <li>
 
 At Goromonzi Police,
+
 <strong>
 turn RIGHT
 </strong>
+
 and proceed down towards Kasema.
 
 </li>
@@ -2045,6 +2173,7 @@ Continue towards Rusike Shops.
 
 After passing Rusike Shops,
 look out for the beacon and
+
 <strong>
 turn RIGHT.
 </strong>
@@ -2056,7 +2185,8 @@ turn RIGHT.
 
 From there,
 follow the Google Maps location
-for the final approach to the venue.
+for the final approach to
+Tawanda Kaseke Homestead.
 
 </li>
 
@@ -2064,11 +2194,12 @@ for the final approach to the venue.
 <li>
 
 If uncertain,
-return to Rusike Shops
-and ask for
+return to Rusike Shops and ask for
+
 <strong>
-Tawanda Kaseke's place
+Tawanda Kaseke Homestead
 </strong>
+
 in Nyika Village.
 
 </li>
@@ -2089,14 +2220,16 @@ Google Maps
 
 
 <h3>
-Official location pin
+
+Tawanda Kaseke Homestead
+
 </h3>
 
 
 <p>
 
-Use the location pin for
-the final approach to the venue.
+Official location pin for the
+inauguration venue in Nyika Village.
 
 </p>
 
@@ -2107,7 +2240,9 @@ href="https://maps.app.goo.gl/gQBqSuExSgi56f7M7"
 target="_blank"
 rel="noopener"
 >
+
 Open Google Maps ↗
+
 </a>
 
 
@@ -2127,7 +2262,9 @@ Need Assistance?
 
 
 <h3>
+
 Direction contacts
+
 </h3>
 
 
@@ -2158,7 +2295,9 @@ Village Committee Secretary
 class="contact-number"
 href="tel:0773909072"
 >
+
 077 390 9072
+
 </a>
 
 </div>
@@ -2179,7 +2318,9 @@ Jinda raSabhuku Nyika
 class="contact-number"
 href="tel:0775668512"
 >
+
 077 566 8512
+
 </a>
 
 </div>
@@ -2218,9 +2359,11 @@ Village Hotspot
 <p>
 
 Connect to the
+
 <strong>
 Village Hotspot
 </strong>
+
 network and enter the hotspot
 login code when the portal opens.
 
@@ -2228,7 +2371,9 @@ login code when the portal opens.
 
 
 <div class="code">
+
 9359409
+
 </div>
 
 
@@ -2254,7 +2399,9 @@ id="say"
 class="eyebrow"
 style="color:#a57c33"
 >
+
 Have Your Say on Nyika
+
 </div>
 
 
@@ -2269,8 +2416,8 @@ to see for our village?
 <p>
 
 Nyika grows through the ideas,
-experience and contribution of its people,
-family, friends and partners.
+experience and contribution of its residents,
+families, diaspora, friends and partners.
 
 Share an idea, suggest a project,
 offer skills, contribute or raise
@@ -2289,8 +2436,11 @@ href="https://wa.me/263775103375?text=Hello%20Nyika%20Village.%20I%20would%20lik
 target="_blank"
 rel="noopener"
 >
+
 Share an Idea
+
 <span>↗</span>
+
 </a>
 
 
@@ -2301,8 +2451,11 @@ href="https://wa.me/263775103375?text=Hello%20Nyika%20Village.%20I%20would%20lik
 target="_blank"
 rel="noopener"
 >
+
 Suggest a Project
+
 <span>↗</span>
+
 </a>
 
 
@@ -2313,8 +2466,26 @@ href="https://wa.me/263775103375?text=Hello%20Nyika%20Village.%20I%20would%20lik
 target="_blank"
 rel="noopener"
 >
+
 Contribute or Partner
+
 <span>↗</span>
+
+</a>
+
+
+
+<a
+class="choice"
+href="https://wa.me/263775103375?text=Hello%20Nyika%20Village.%20I%20am%20part%20of%20the%20Nyika%20diaspora%20or%20wider%20Nyika%20network%20and%20would%20like%20to%20offer%20skills%2C%20ideas%20or%20support%3A"
+target="_blank"
+rel="noopener"
+>
+
+Diaspora Support
+
+<span>↗</span>
+
 </a>
 
 
@@ -2325,8 +2496,11 @@ href="https://wa.me/263775103375?text=Hello%20Nyika%20Village.%20I%20would%20lik
 target="_blank"
 rel="noopener"
 >
+
 Volunteer Skills
+
 <span>↗</span>
+
 </a>
 
 
@@ -2337,20 +2511,11 @@ href="https://wa.me/263775103375?text=Hello%20Nyika%20Village.%20I%20would%20lik
 target="_blank"
 rel="noopener"
 >
+
 Raise an Issue
+
 <span>↗</span>
-</a>
 
-
-
-<a
-class="choice"
-href="https://wa.me/263775103375?text=Hello%20Nyika%20Village.%20I%20would%20like%20to%20share%20the%20following%20thought%3A"
-target="_blank"
-rel="noopener"
->
-Other Thought
-<span>↗</span>
 </a>
 
 
@@ -2434,6 +2599,10 @@ Goromonzi District, Zimbabwe
 <small>
 
 Inauguration • Friday 28 August 2026 • 10:00 AM
+
+<br>
+
+Tawanda Kaseke Homestead
 
 </small>
 
