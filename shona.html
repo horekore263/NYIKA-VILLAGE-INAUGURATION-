@@ -488,6 +488,8 @@ fetch("index.html")
 
   const extraScript=`
     <script>
+      const shona = ${JSON.stringify(shona)};
+      const clean = ${clean.toString()};
       (${translatePage.toString()})();
     <\/script>
   `;
