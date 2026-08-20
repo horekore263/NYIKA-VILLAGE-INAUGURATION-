@@ -1,0 +1,544 @@
+<!doctype html>
+<html lang="sn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>Kugadzwa kwaTawanda Kaseke saSabhuku weNyika Village</title>
+
+<style>
+body{
+  margin:0;
+  min-height:100vh;
+  display:grid;
+  place-items:center;
+  background:#173a2f;
+  color:#f7f1e7;
+  font-family:Arial,Helvetica,sans-serif;
+}
+
+.loading{
+  text-align:center;
+  padding:30px;
+}
+
+.loading strong{
+  display:block;
+  font-family:Georgia,serif;
+  font-size:2rem;
+  margin-bottom:8px;
+  color:#ead8aa;
+}
+</style>
+</head>
+
+<body>
+
+<div class="loading">
+  <strong>Nyika Village</strong>
+  Shona page iri kuvhurwa...
+</div>
+
+<script>
+const shona = {
+
+"Inauguration of":"Kugadzwa kwa",
+
+"as Sabhuku, Nyika Village":"saSabhuku weNyika Village",
+
+"Nyika Village • Goromonzi District • Zimbabwe":
+"Nyika Village • Dunhu reGoromonzi • Zimbabwe",
+
+"A gathering of family, traditional leadership, residents, friends and partners to mark a new chapter in the stewardship of Nyika Village.":
+"Kuungana kwemhuri, vatungamiri vechivanhu, vagari, shamwari nevadyidzani tichicherechedza kutanga kwechitsauko chitsva mukutungamirirwa kweNyika Village.",
+
+"View Programme":"Ona Hurongwa",
+
+"Discover Our Village":"Ziva Musha Wedu",
+
+"Event Essentials":"Zvakakosha NezveZuva",
+
+"28 August":"28 Nyamavhuvhu",
+
+"Friday • Programme starts at 10:00 AM":
+"Chishanu • Hurongwa hunotanga na10:00 mangwanani",
+
+"Nyika Village, Goromonzi District":
+"Nyika Village, Dunhu reGoromonzi",
+
+"Our Village":"Musha Wedu",
+
+"Programme":"Hurongwa",
+
+"Directions":"Nzira",
+
+"Connect":"Batana",
+
+"Map ↗":"Mepu ↗",
+
+"Driving Guide":"Nzira Yekutyaira",
+
+"Guest WiFi":"WiFi yeVaenzi",
+
+"Have Your Say":"Taura Pfungwa Dzako",
+
+"Nyika Village: resources, enterprise, people and ambition.":
+"Nyika Village: zviwanikwa, mabasa, vanhu nezvishuwo.",
+
+"Nyika is not starting from zero. It already has people, productive land, water, livestock, household enterprise, infrastructure and a strong connection between families and their village.":
+"Nyika haisi kutangira pazero. Musha une vanhu, ivhu rinobereka, mvura, zvipfuyo, mabasa anoitwa nemhuri, zvivakwa pamwe nekubatana kwakasimba pakati pemhuri nemusha wavo.",
+
+"Nyika Village is a growing rural community of more than 100 households and over 250 adults, alongside a significant population of infants, children and young people. Electricity, expanding internet access and two perennial rivers provide an important foundation for a more connected, healthy and productive rural future.":
+"Nyika Village imusha wemaruwa uri kukura une mhuri dzinopfuura zana uye vanhu vakuru vanopfuura mazana maviri nemakumi mashanu, pamwe nevacheche, vana nevechidiki vakawanda. Magetsi, kuwedzera kweinternet uye nzizi mbiri dzinoyerera gore rose zvinopa hwaro hwakasimba hweramangwana rine kubatana, utano nekubudirira.",
+
+"households forming the village community":
+"mhuri dzinoumba musha wedu",
+
+"adults alongside children, youth and infants":
+"vanhu vakuru pamwe nevana, vechidiki nevacheche",
+
+"perennial rivers supporting productive activity":
+"nzizi dzinoyerera gore rose dzinotsigira mabasa ekurima",
+
+"Power":"Magetsi",
+
+"electricity connectivity across the village":
+"kubatana kwemagetsi mumusha",
+
+"expanding digital connectivity and rural WiFi":
+"kuwedzera kweinternet neWiFi yemumaruwa",
+
+"01 • PRODUCTIVE VILLAGE":
+"01 • MUSHA UNOBUDISA",
+
+"Agriculture and household enterprise":
+"Kurima neMabasa eMhuri",
+
+"Village livelihoods span beef production, cattle, river-front gardening, fish farming, beekeeping, broilers, egg production and other household-based agricultural projects.":
+"Mararamiro emusha anosanganisira kupfuya mombe, magadheni ari pedyo nenzizi, kurima hove, kuchengeta nyuchi, huku dzebroiler, kugadzira mazai nezvimwe zvirongwa zvekurima zvinoitwa nemhuri.",
+
+"02 • NATURAL ENDOWMENT":
+"02 • ZVIWANIKWA ZVEMUSIKWA",
+
+"Land, water, flora and fauna":
+"Ivhu, Mvura, Miti neMhuka",
+
+"Nyika is endowed with productive land, perennial water systems, indigenous vegetation and a rich rural environment. Development should unlock opportunity while protecting the natural assets that make the village valuable.":
+"Nyika ine ivhu rinobereka, nzizi dzinoyerera gore rose, miti yemuno uye nharaunda yakapfuma yezvisikwa. Budiriro inofanira kuvhura mikana ichichengetedza zviwanikwa zvinoita kuti musha ukoshese.",
+
+"03 • HEALTH & WELLBEING":
+"03 • UTANO NERARAMIRO",
+
+"Healthy people, stronger households":
+"Vanhu Vane Utano, Mhuri Dzakasimba",
+
+"Village development depends on health, prevention, wellbeing and access to trusted health information and services. Community-based health and wellness outreach can help improve awareness, early intervention, maternal and child wellbeing, prevention and connections to formal health services. Health must therefore grow alongside education, infrastructure, agriculture and livelihoods.":
+"Budiriro yemusha inotsamira pautano, kudzivirira zvirwere, kugara zvakanaka uye kuwana ruzivo nemabasa ehutano anovimbika. Zvirongwa zvehutano zvinounzwa pedyo nevanhu zvinogona kuvandudza ruzivo, kuona matambudziko nekukurumidza, utano hwemadzimai nevana, kudzivirira zvirwere nekubatanidza vanhu nemasangano ehutano. Utano hunofanira kukura pamwe nedzidzo, zvivakwa, kurima nemararamiro.",
+
+"04 • DEVELOPMENT PHILOSOPHY":
+"04 • NZIRA YEDU YEBUDIRIRO",
+
+"Modernise without losing what matters":
+"Kuvandudza Tisingarasikirwi Nezvinokosha",
+
+"The goal is not to turn rural life into an urban imitation. It is to build a modern, sustainable and connected rural community in which infrastructure, knowledge and institutions strengthen local livelihoods while preserving community identity.":
+"Chinangwa hachisi kushandura hupenyu hwemumaruwa kuti huve sekumaguta. Chinangwa ndechekuvaka musha wemaruwa wemazuva ano, wakabatana uye unochengetedza ramangwana, umo zvivakwa, ruzivo nemasangano zvinosimbisa mararamiro evanhu tichichengetedza hunhu nemagariro emusha.",
+
+"The Nyika We Aspire to Build":
+"Nyika Yatinoda Kuvaka",
+
+"Progressive development, built around real village needs.":
+"Budiriro Inoenderana Nezvinodiwa Nemusha.",
+
+"Each initiative should solve a practical problem and strengthen the wider village system rather than exist as an isolated project.":
+"Chirongwa chega chega chinofanira kugadzirisa dambudziko chairo uye kusimbisa musha wese, kwete kungova purojekiti yakamira yoga.",
+
+"Accessible early childhood development giving young children a stronger educational start.":
+"ECD iri pedyo nevanhu inopa vana vadiki hwaro hwakasimba hwedzidzo.",
+
+"Library & Literacy":
+"Raibhurari neKugona Kuverenga",
+
+"A community reading and learning space serving children, youths and adults.":
+"Nzvimbo yemusha yekuverenga nekudzidza inoshandira vana, vechidiki nevanhu vakuru.",
+
+"Agriculture":"Kurima",
+
+"Productive projects that strengthen households, improve output and connect farmers to opportunity.":
+"Zvirongwa zvinobudisa zvinobatsira mhuri, kuwedzera goho nekubatanidza varimi nemikana.",
+
+"Roads & Services":
+"Migwagwa neMabasa",
+
+"Better roads and basic services improving access, mobility and economic activity.":
+"Migwagwa iri nani nemabasa anokosha zvinovandudza kufamba, kusvika kunzvimbo nekusimudzira upfumi.",
+
+"Connectivity for All":
+"Internet neDigital kune Wese",
+
+"Affordable digital access supporting education, markets, communication, financial services and enterprise.":
+"Internet inodhura zvine mwero inotsigira dzidzo, misika, kutaurirana, mabasa emari nemabhizimisi.",
+
+"Youth & Skills":
+"Vechidiki neUnyanzvi",
+
+"Practical capability programmes preparing young people for new opportunities.":
+"Zvirongwa zveunyanzvi zvinogadzirira vechidiki mikana mitsva.",
+
+"Health & Wellness":
+"Utano neKugara Zvakanaka",
+
+"Community health, prevention, wellness and outreach initiatives that improve access to trusted information and appropriate services.":
+"Zvirongwa zvehutano, kudzivirira zvirwere nekuunza mabasa ehutano pedyo nevanhu zvinovandudza kuwanikwa kweruzivo rwakavimbika nemabasa akakodzera.",
+
+"Community Platforms":
+"Nzvimbo dzeNharaunda",
+
+"Spaces for meetings, learning, health outreach, digital services and community participation.":
+"Nzvimbo dzemisangano, kudzidza, mabasa ehutano, digital services nekutora chikamu kwevanhu.",
+
+"Local Solutions":
+"Mhinduro Dzemuno",
+
+"Development designed with villagers, family, diaspora, institutions and partners.":
+"Budiriro inorongwa pamwe nevagari, mhuri, diaspora, masangano nevadyidzani.",
+
+"Programme of the Day":
+"Hurongwa hweZuva",
+
+"A dignified, simple ceremony.":
+"Mhemberero Ine Rukudzo uye Iri Nyore.",
+
+"Formal proceedings begin at 10:00 AM. The programme remains respectful of customary protocol and may be refined with traditional leadership.":
+"Zviitiko zviri pamutemo zvinotanga na10:00 mangwanani. Hurongwa hunoremekedza tsika dzechivanhu uye hunogona kugadziriswa pamwe nevatungamiri vechivanhu.",
+
+"Guest arrival":
+"Kusvika kweVaenzi",
+
+"Welcome, seating and orientation.":
+"Kugamuchirwa, kugara nekutungamirirwa.",
+
+"Opening of proceedings":
+"Kuvhurwa kweZviitiko",
+
+"Introductions and recognition of traditional leadership.":
+"Kusuma vanhu nekucherechedza vatungamiri vechivanhu.",
+
+"Family and village history":
+"Nhoroondo Yemhuri neMusha",
+
+"Lineage, context and remembrance.":
+"Dzinza, nhoroondo nekurangarira.",
+
+"Traditional inauguration proceedings":
+"Zviitiko zveChivanhu zveKugadzwa",
+
+"Customary protocol as directed by traditional leadership.":
+"Tsika dzekugadzwa sezvinotungamirirwa nevatungamiri vechivanhu.",
+
+"Addresses and acceptance":
+"Mashoko neKugamuchira Basa",
+
+"Invited messages and inauguration address.":
+"Mashoko evaenzi vakakokwa nemashoko ekugamuchira basa.",
+
+"Official photographs":
+"Mapikicha ePamutemo",
+
+"Family, traditional leadership, community and guests.":
+"Mhuri, vatungamiri vechivanhu, vagari nevaenzi.",
+
+"Community meal and celebration":
+"Kudya pamwe neKupemberera",
+
+"Lunch and informal engagement.":
+"Kudya pamwe nekutandara.",
+
+"Travelling from Harare to Nyika Village.":
+"Kubva kuHarare Kuenda kuNyika Village.",
+
+"Use Google Maps for the final approach or follow the simple route below.":
+"Shandisai Google Maps pachikamu chekupedzisira cherwendo kana kutevera nzira iri pasi apa.",
+
+"Travel from Harare along Mutare Road through Ruwa.":
+"Kubva kuHarare, fambai neMutare Road muchipfuura Ruwa.",
+
+"Approximately 5 km after Ruwa,":
+"Mushure meRuwa nemakiromita anenge 5,",
+
+"turn LEFT at the Goromonzi turn-off.":
+"tenderai KURUBOSHWE paGoromonzi turn-off.",
+
+"Continue for approximately 11 km towards Goromonzi.":
+"Rambai muchifamba makiromita anenge 11 muchienda kuGoromonzi.",
+
+"At Goromonzi Police,":
+"PaGoromonzi Police,",
+
+"turn RIGHT":
+"tenderai KURUDYI",
+
+"and proceed down towards Kasema.":
+"muchidzika muchienda kuKasema.",
+
+"Continue towards Rusike Shops.":
+"Rambai muchienda kuRusike Shops.",
+
+"After passing Rusike Shops, look out for the beacon and":
+"Mushure meRusike Shops, tarisai beacon mozoti",
+
+"turn RIGHT.":
+"tenderai KURUDYI.",
+
+"From there, follow the Google Maps location for the final approach to the venue.":
+"Kubva ipapo, teverai Google Maps kusvika panzvimbo yemhemberero.",
+
+"If uncertain, return to Rusike Shops and ask for":
+"Kana musina chokwadi, dzokerai kuRusike Shops mobvunza",
+
+"Tawanda Kaseke's place":
+"kwaTawanda Kaseke",
+
+"in Nyika Village.":
+"muNyika Village.",
+
+"Official location pin":
+"Pin Yepamutemo Yenzvimbo",
+
+"Use the location pin for the final approach to the venue.":
+"Shandisai pin iyi pachikamu chekupedzisira cherwendo.",
+
+"Open Google Maps ↗":
+"Vhura Google Maps ↗",
+
+"Need Assistance?":
+"Munoda Rubatsiro?",
+
+"Direction contacts":
+"Vanobatsira Nezvenzira",
+
+"If you need assistance while travelling to the village, please contact one of the following village representatives.":
+"Kana muchida rubatsiro muri munzira kuenda kumusha, fonerai mumwe wevamiriri vemusha vari pasi apa.",
+
+"Village Committee Secretary":
+"Munyori weKomiti yeMusha",
+
+"Connect to the":
+"Batanai pa",
+
+"network and enter the hotspot login code when the portal opens.":
+"wobva waisa code kana portal yavhurika.",
+
+"Free event connectivity for guests at the venue.":
+"WiFi yemahara yevaenzi vari panzvimbo yemhemberero.",
+
+"Have Your Say on Nyika":
+"Taura Pfungwa Dzako Pamusoro peNyika",
+
+"What would you like to see for our village?":
+"Chii Chamungada Kuona Chichiitwa Mumusha Wedu?",
+
+"Nyika grows through the ideas, experience and contribution of its people, family, friends and partners. Share an idea, suggest a project, offer skills, contribute or raise an issue directly with us.":
+"Nyika inokura nemazano, ruzivo nerubatsiro rwevagari, mhuri, shamwari nevadyidzani. Tumirai zano, kurudzirai purojekiti, ipai unyanzvi, batsirai kana kusimudza nyaya inoda kutariswa.",
+
+"Share an Idea":
+"Tumira Zano",
+
+"Suggest a Project":
+"Kurudzira Purojekiti",
+
+"Contribute or Partner":
+"Batsira kana Batirana Nesu",
+
+"Volunteer Skills":
+"Ipa Unyanzvi Hwako",
+
+"Raise an Issue":
+"Simudza Nyaya",
+
+"Other Thought":
+"Imwe Pfungwa",
+
+"Dedicated WhatsApp:":
+"WhatsApp yeNyika:",
+
+"“A connected, productive, educated, healthy and sustainable Nyika Village.”":
+"“Nyika Village yakabatana, inobudisa, yakadzidza, ine utano uye inochengetedza ramangwana.”",
+
+"Tradition • Service • Community":
+"Tsika • Kushandira Vanhu • Kubatana",
+
+"Goromonzi District, Zimbabwe":
+"Dunhu reGoromonzi, Zimbabwe",
+
+"Inauguration • Friday 28 August 2026 • 10:00 AM":
+"Kugadzwa • Chishanu 28 Nyamavhuvhu 2026 • 10:00 mangwanani"
+};
+
+
+function clean(value){
+  return value.replace(/\s+/g," ").trim();
+}
+
+
+function translatePage(){
+
+  document.documentElement.lang="sn";
+
+  document.title=
+  "Kugadzwa kwaTawanda Kaseke saSabhuku weNyika Village";
+
+
+  const walker=
+    document.createTreeWalker(
+      document.body,
+      NodeFilter.SHOW_TEXT
+    );
+
+
+  let node;
+
+
+  while(node=walker.nextNode()){
+
+    const parent=node.parentElement;
+
+    if(!parent) continue;
+
+    if(
+      parent.tagName==="SCRIPT" ||
+      parent.tagName==="STYLE"
+    ) continue;
+
+
+    const original=clean(node.nodeValue);
+
+
+    if(shona[original]){
+
+      const beginning=
+        node.nodeValue.match(/^\s*/)[0];
+
+      const ending=
+        node.nodeValue.match(/\s*$/)[0];
+
+      node.nodeValue=
+        beginning+
+        shona[original]+
+        ending;
+    }
+  }
+
+
+  const links=
+    document.querySelector(".links");
+
+
+  if(links){
+
+    const language=
+      document.createElement("div");
+
+    language.innerHTML=`
+      <a
+        class="keep"
+        href="index.html"
+        style="
+          background:#f1e3c3;
+          color:#173a2f;
+          margin-left:4px;
+        "
+      >
+        ENGLISH
+      </a>
+
+      <a
+        class="keep"
+        href="shona.html"
+        style="
+          background:#173a2f;
+          color:white;
+          margin-left:4px;
+        "
+      >
+        SHONA
+      </a>
+    `;
+
+
+    Array
+      .from(language.children)
+      .forEach(item=>{
+        links.appendChild(item);
+      });
+  }
+}
+
+
+fetch("index.html")
+.then(response=>{
+
+  if(!response.ok){
+    throw new Error("English page could not be loaded");
+  }
+
+  return response.text();
+})
+.then(html=>{
+
+  const extraScript=`
+    <script>
+      (${translatePage.toString()})();
+    <\/script>
+  `;
+
+
+  html=
+    html.replace(
+      '<html lang="en">',
+      '<html lang="sn">'
+    );
+
+
+  html=
+    html.replace(
+      "</body>",
+      extraScript+"</body>"
+    );
+
+
+  document.open();
+
+  document.write(html);
+
+  document.close();
+})
+.catch(error=>{
+
+  document.body.innerHTML=`
+    <div class="loading">
+
+      <strong>
+        Nyika Village
+      </strong>
+
+      Shona page haina kukwanisa kuvhurwa.
+
+      <br><br>
+
+      <a
+        href="index.html"
+        style="color:#ead8aa"
+      >
+        Dzokera kuEnglish page
+      </a>
+
+    </div>
+  `;
+
+});
+
+</script>
+
+</body>
+</html>
