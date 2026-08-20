@@ -1,568 +1,2450 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#173A2F">
+
+<title>Inauguration of Tawanda Kaseke as Sabhuku, Nyika Village</title>
+
+<meta
+  name="description"
+  content="Inauguration of Tawanda Kaseke as Sabhuku, Nyika Village. Programme, directions, village profile, health and wellness, and community information."
+>
+
 <style>
-.lang-switch{
+
+:root{
+  --green:#173a2f;
+  --dark:#0f2a21;
+  --mid:#28513f;
+  --cream:#f7f1e7;
+  --paper:#fffdf9;
+  --gold:#c7a25b;
+  --gold2:#ead8aa;
+  --ink:#203028;
+  --muted:#68756f;
+  --line:rgba(23,58,47,.13);
+}
+
+*{
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  margin:0;
+  font-family:Arial,Helvetica,sans-serif;
+  color:var(--ink);
+  line-height:1.6;
+
+  background:
+    radial-gradient(
+      circle at 10% 15%,
+      rgba(199,162,91,.12),
+      transparent 24rem
+    ),
+    radial-gradient(
+      circle at 90% 35%,
+      rgba(40,81,63,.10),
+      transparent 25rem
+    ),
+    linear-gradient(
+      180deg,
+      #fcfaf6,
+      #f7f1e7
+    );
+}
+
+
+/* Shona rock-art inspired background */
+
+body:before{
+  content:"";
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  z-index:-1;
+  opacity:.16;
+
+  background-image:
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='340' height='340' viewBox='0 0 340 340'><g fill='none' stroke='%23876131' stroke-width='2' stroke-linecap='round'><path d='M38 72c19-12 34-12 53 0m-48 22c16-9 29-9 45 0m-22-42v64'/><path d='M140 66l21-10 21 10-21 10-21-10zm21 10v35'/><circle cx='266' cy='78' r='15'/><path d='M251 78h30M266 63v30'/><path d='M58 201c18-18 43-18 61 0m-55 25c15-10 33-10 48 0'/><path d='M184 201c12 0 21 9 21 21s-9 21-21 21-21-9-21-21 9-21 21-21z'/><path d='M251 200c20-13 38-13 58 0m-53 24c16-9 31-9 47 0'/><path d='M64 290l21-11 21 11-21 11-21-11zm21 11v32'/></g></svg>");
+
+  background-size:320px 320px;
+}
+
+a{
+  color:inherit;
+}
+
+.wrap{
+  width:min(1120px,calc(100% - 34px));
+  margin:auto;
+}
+
+
+/* NAVIGATION */
+
+header{
+  position:sticky;
+  top:0;
+  z-index:50;
+
+  background:rgba(255,253,249,.92);
+  backdrop-filter:blur(12px);
+
+  border-bottom:1px solid rgba(23,58,47,.08);
+}
+
+nav{
+  min-height:70px;
+
   display:flex;
   align-items:center;
-  gap:2px;
-  margin-left:6px;
-  padding:3px;
-  border:1px solid rgba(23,58,47,.15);
-  border-radius:999px;
-  background:#fff;
-  box-shadow:0 3px 12px rgba(23,58,47,.05);
+  justify-content:space-between;
+
+  gap:18px;
 }
 
-.lang-switch button{
-  min-height:36px;
-  padding:7px 10px;
-  border:0;
-  border-radius:999px;
-  background:transparent;
-  color:#65736c;
-  font-size:.70rem;
+.brand{
+  text-decoration:none;
+  color:var(--green);
   font-weight:800;
-  letter-spacing:.05em;
-  cursor:pointer;
 }
 
-.lang-switch button.active{
-  background:#173a2f;
-  color:#fff;
+.brand small{
+  display:block;
+  font-size:.68rem;
+  text-transform:uppercase;
+  letter-spacing:.12em;
+  color:#907341;
+}
+
+.links{
+  display:flex;
+  flex-wrap:wrap;
+  gap:5px;
+}
+
+.links a{
+  min-height:44px;
+
+  display:flex;
+  align-items:center;
+
+  padding:8px 12px;
+
+  border-radius:999px;
+
+  text-decoration:none;
+
+  font-size:.88rem;
+  font-weight:700;
+
+  color:#385147;
+}
+
+.links a:hover{
+  background:rgba(23,58,47,.07);
+}
+
+
+/* HERO */
+
+.hero{
+  position:relative;
+  overflow:hidden;
+  color:white;
+
+  background:
+    radial-gradient(
+      circle at 80% 20%,
+      rgba(234,216,170,.18),
+      transparent 18rem
+    ),
+    radial-gradient(
+      circle at 12% 85%,
+      rgba(112,151,130,.16),
+      transparent 22rem
+    ),
+    linear-gradient(
+      135deg,
+      var(--dark),
+      var(--green) 55%,
+      var(--mid)
+    );
+}
+
+.hero:before{
+  content:"";
+
+  position:absolute;
+  inset:0;
+
+  opacity:.09;
+
+  background-image:
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='500' height='500' viewBox='0 0 500 500'><g fill='none' stroke='%23EAD8AA' stroke-width='2.5' stroke-linecap='round'><path d='M62 108c24-16 42-16 66 0m-62 28c22-12 38-12 58 0m-24-48v66'/><path d='M176 118l22-10 22 10-22 10-22-10zm22 10v34'/><circle cx='385' cy='106' r='20'/><path d='M365 106h40M385 86v40'/><path d='M80 264c16-18 40-18 56 0m-50 28c14-12 30-12 44 0'/><path d='M312 252c22-14 36-14 58 0m-56 26c18-10 34-10 52 0'/></g></svg>");
+
+  background-size:440px 440px;
+}
+
+.hero-grid{
+  position:relative;
+  z-index:2;
+
+  display:grid;
+
+  grid-template-columns:
+    1.3fr
+    .7fr;
+
+  gap:52px;
+
+  align-items:end;
+
+  padding:96px 0 88px;
+}
+
+.eyebrow{
+  color:var(--gold2);
+
+  text-transform:uppercase;
+  letter-spacing:.16em;
+
+  font-size:.74rem;
+  font-weight:800;
+}
+
+h1{
+  margin:18px 0 22px;
+
+  font-family:Georgia,serif;
+
+  font-size:clamp(3.2rem,8vw,6.2rem);
+
+  line-height:.92;
+
+  letter-spacing:-.05em;
+}
+
+h1 em{
+  display:block;
+
+  color:var(--gold2);
+
+  font-weight:400;
+}
+
+.hero-text{
+  max-width:700px;
+
+  color:#d8e0dc;
+
+  font-size:1.12rem;
+}
+
+.buttons{
+  display:flex;
+
+  gap:10px;
+
+  flex-wrap:wrap;
+
+  margin-top:28px;
+}
+
+.btn{
+  min-height:48px;
+
+  display:inline-flex;
+
+  align-items:center;
+  justify-content:center;
+
+  padding:12px 18px;
+
+  border-radius:999px;
+
+  text-decoration:none;
+
+  font-weight:800;
+}
+
+.btn-gold{
+  background:var(--gold2);
+  color:var(--dark);
+}
+
+.btn-outline{
+  border:1px solid rgba(255,255,255,.3);
+  color:white;
+}
+
+.event-card{
+  padding:24px;
+
+  border-radius:26px;
+
+  border:1px solid rgba(255,255,255,.15);
+
+  background:rgba(255,255,255,.08);
+
+  backdrop-filter:blur(8px);
+}
+
+.date{
+  margin:8px 0 12px;
+
+  font-family:Georgia,serif;
+
+  color:var(--gold2);
+
+  font-size:2.5rem;
+
+  line-height:1;
+}
+
+.event-card p{
+  color:#d7dfda;
+}
+
+.quick{
+  display:grid;
+
+  grid-template-columns:
+    1fr
+    1fr;
+
+  gap:8px;
+
+  margin-top:18px;
+}
+
+.quick a{
+  padding:10px;
+
+  border-radius:14px;
+
+  text-align:center;
+
+  background:rgba(255,255,255,.08);
+
+  text-decoration:none;
+
+  font-size:.85rem;
+
+  font-weight:700;
+}
+
+
+/* GENERAL */
+
+section{
+  padding:82px 0;
+}
+
+.heading{
+  max-width:760px;
+
+  margin-bottom:30px;
+}
+
+.heading .eyebrow{
+  color:#a57c33;
+}
+
+h2{
+  margin:10px 0 15px;
+
+  font-family:Georgia,serif;
+
+  color:var(--green);
+
+  font-size:clamp(2.2rem,5vw,4rem);
+
+  line-height:1;
+
+  letter-spacing:-.035em;
+}
+
+.heading p{
+  margin:0;
+
+  color:var(--muted);
+
+  font-size:1.04rem;
+}
+
+.card{
+  background:rgba(255,255,255,.82);
+
+  border:1px solid var(--line);
+
+  border-radius:24px;
+
+  box-shadow:
+    0 18px 45px
+    rgba(23,58,47,.09);
+}
+
+
+/* OUR VILLAGE */
+
+.intro{
+  position:relative;
+
+  overflow:hidden;
+
+  padding:30px;
+}
+
+.intro:after{
+  content:"NYIKA";
+
+  position:absolute;
+
+  right:-5px;
+
+  bottom:-55px;
+
+  font-size:8rem;
+
+  font-weight:900;
+
+  color:rgba(23,58,47,.04);
+}
+
+.lead{
+  position:relative;
+
+  z-index:2;
+
+  margin:0;
+
+  font-family:Georgia,serif;
+
+  color:var(--green);
+
+  font-size:
+    clamp(1.4rem,2.7vw,2.1rem);
+
+  line-height:1.35;
+}
+
+.stats{
+  position:relative;
+
+  z-index:2;
+
+  display:grid;
+
+  grid-template-columns:
+    repeat(5,1fr);
+
+  gap:12px;
+
+  margin-top:26px;
+}
+
+.stat{
+  min-height:125px;
+
+  padding:18px;
+
+  background:var(--paper);
+
+  border:1px solid var(--line);
+
+  border-radius:18px;
+}
+
+.stat b{
+  display:block;
+
+  margin-bottom:8px;
+
+  font-family:Georgia,serif;
+
+  color:var(--green);
+
+  font-size:2rem;
+}
+
+.stat span{
+  color:var(--muted);
+
+  font-size:.87rem;
+}
+
+.profile-grid{
+  display:grid;
+
+  grid-template-columns:
+    1fr
+    1fr;
+
+  gap:14px;
+
+  margin-top:16px;
+}
+
+.profile{
+  padding:24px;
+
+  border:1px solid var(--line);
+
+  border-radius:22px;
+
+  background:
+    linear-gradient(
+      180deg,
+      #fff,
+      #fbf6ec
+    );
+}
+
+.number{
+  color:#a57c33;
+
+  font-size:.75rem;
+
+  font-weight:800;
+
+  letter-spacing:.12em;
+}
+
+.profile h3{
+  color:var(--green);
+
+  margin:8px 0 10px;
+}
+
+.profile p{
+  margin:0;
+
+  color:var(--muted);
+}
+
+
+/* ASPIRATIONS */
+
+.vision{
+  background:
+    radial-gradient(
+      circle at 85% 15%,
+      rgba(199,162,91,.15),
+      transparent 20rem
+    ),
+    linear-gradient(
+      180deg,
+      #f7f1e7,
+      #fbf8f2
+    );
+}
+
+.vision-grid{
+  display:grid;
+
+  grid-template-columns:
+    repeat(3,1fr);
+
+  gap:14px;
+}
+
+.vision-card{
+  min-height:185px;
+
+  padding:22px;
+
+  background:white;
+
+  border:1px solid var(--line);
+
+  border-radius:22px;
+
+  box-shadow:
+    0 12px 32px
+    rgba(23,58,47,.06);
+}
+
+.icon{
+  width:42px;
+  height:42px;
+
+  display:grid;
+
+  place-items:center;
+
+  margin-bottom:14px;
+
+  border-radius:12px;
+
+  background:#f1e3c3;
+
+  color:var(--green);
+
+  font-weight:800;
+}
+
+.vision-card h3{
+  margin:0 0 7px;
+
+  color:var(--green);
+}
+
+.vision-card p{
+  margin:0;
+
+  color:var(--muted);
+
+  font-size:.91rem;
+}
+
+
+/* PROGRAMME */
+
+.programme{
+  display:grid;
+
+  grid-template-columns:
+    .65fr
+    1.35fr;
+
+  gap:44px;
+}
+
+.timeline{
+  border-top:1px solid var(--line);
+}
+
+.row{
+  display:grid;
+
+  grid-template-columns:
+    76px
+    1fr;
+
+  gap:16px;
+
+  padding:20px 0;
+
+  border-bottom:1px solid var(--line);
+}
+
+.row time{
+  color:#a57c33;
+
+  font-weight:800;
+}
+
+.row strong{
+  display:block;
+
+  color:var(--green);
+}
+
+.row span{
+  color:var(--muted);
+
+  font-size:.92rem;
+}
+
+
+/* DIRECTIONS */
+
+.directions{
+  color:white;
+
+  background:
+    radial-gradient(
+      circle at 15% 18%,
+      rgba(234,216,170,.12),
+      transparent 20rem
+    ),
+    linear-gradient(
+      135deg,
+      #102d24,
+      #1d4738
+    );
+}
+
+.directions h2{
+  color:white;
+}
+
+.directions .heading p{
+  color:#d3ddd7;
+}
+
+.directions .eyebrow{
+  color:var(--gold2);
+}
+
+.direction-grid{
+  display:grid;
+
+  grid-template-columns:
+    1.25fr
+    .75fr;
+
+  gap:16px;
+}
+
+.route,
+.mapbox{
+  padding:26px;
+
+  border:
+    1px solid
+    rgba(255,255,255,.14);
+
+  border-radius:24px;
+
+  background:
+    rgba(255,255,255,.08);
+}
+
+.route ol{
+  margin:0;
+
+  padding-left:23px;
+}
+
+.route li{
+  margin-bottom:15px;
+
+  color:#d9e2dd;
+}
+
+.mapbox{
+  text-align:center;
+}
+
+.mapbox h3{
+  font-family:Georgia,serif;
+
+  font-size:1.7rem;
+}
+
+.mapbox p{
+  color:#d3ddd7;
+}
+
+
+/* DIRECTION ASSISTANCE */
+
+.contact-panel{
+  margin-top:18px;
+
+  padding:24px;
+
+  border-radius:24px;
+
+  background:
+    rgba(255,255,255,.08);
+
+  border:
+    1px solid
+    rgba(255,255,255,.14);
+}
+
+.contact-panel h3{
+  margin:0 0 5px;
+
+  font-family:Georgia,serif;
+
+  font-size:1.55rem;
+
+  color:white;
+}
+
+.contact-intro{
+  margin:0 0 18px;
+
+  color:#d3ddd7;
+}
+
+.contact-grid{
+  display:grid;
+
+  grid-template-columns:
+    1fr
+    1fr;
+
+  gap:12px;
+}
+
+.contact-card{
+  padding:18px;
+
+  border-radius:18px;
+
+  background:
+    rgba(255,255,255,.08);
+}
+
+.contact-card strong{
+  display:block;
+
+  color:var(--gold2);
+
+  margin-bottom:3px;
+}
+
+.contact-role{
+  display:block;
+
+  color:#d4ded9;
+
+  font-size:.88rem;
+
+  margin-bottom:10px;
+}
+
+.contact-number{
+  display:inline-flex;
+
+  align-items:center;
+
+  min-height:42px;
+
+  padding:8px 13px;
+
+  border-radius:999px;
+
+  background:var(--gold2);
+
+  color:var(--dark);
+
+  text-decoration:none;
+
+  font-weight:800;
+}
+
+
+/* CONNECT */
+
+.connect{
+  display:grid;
+
+  grid-template-columns:
+    .72fr
+    1.28fr;
+
+  gap:18px;
+}
+
+.wifi{
+  padding:28px;
+
+  color:white;
+
+  border-radius:24px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #173a2f,
+      #102c23
+    );
+}
+
+.wifi h3{
+  font-size:1.55rem;
+}
+
+.code{
+  margin:10px 0;
+
+  color:var(--gold2);
+
+  font-family:Georgia,serif;
+
+  font-size:2.6rem;
+
+  letter-spacing:.06em;
+}
+
+.wifi p{
+  color:#d6deda;
+}
+
+.listen{
+  padding:28px;
+}
+
+.listen h3{
+  margin:8px 0 10px;
+
+  font-family:Georgia,serif;
+
+  color:var(--green);
+
+  font-size:2rem;
+}
+
+.listen p{
+  color:var(--muted);
+}
+
+.choices{
+  display:grid;
+
+  grid-template-columns:
+    1fr
+    1fr;
+
+  gap:9px;
+
+  margin-top:18px;
+}
+
+.choice{
+  min-height:52px;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:space-between;
+
+  padding:12px 14px;
+
+  text-decoration:none;
+
+  color:var(--green);
+
+  font-weight:800;
+
+  border:1px solid var(--line);
+
+  border-radius:15px;
+
+  background:#fffdf8;
+}
+
+.choice:hover{
+  background:#f5eedd;
+}
+
+
+/* CLOSING */
+
+.closing{
+  padding:90px 0;
+
+  text-align:center;
+}
+
+.closing blockquote{
+  max-width:900px;
+
+  margin:0 auto 18px;
+
+  font-family:Georgia,serif;
+
+  color:var(--green);
+
+  font-size:
+    clamp(2rem,4.2vw,3.5rem);
+
+  line-height:1.08;
+}
+
+.closing p{
+  color:var(--muted);
+}
+
+
+/* FOOTER */
+
+footer{
+  padding:34px 0;
+
+  background:#0d2820;
+
+  color:white;
+}
+
+.footer{
+  display:flex;
+
+  justify-content:space-between;
+
+  gap:18px;
+}
+
+footer strong{
+  color:var(--gold2);
+}
+
+footer small{
+  color:#9eb0a7;
+}
+
+
+/* MOBILE */
+
+@media(max-width:950px){
+
+  .hero-grid,
+  .programme,
+  .direction-grid,
+  .connect{
+    grid-template-columns:1fr;
+  }
+
+  .stats{
+    grid-template-columns:
+      repeat(3,1fr);
+  }
+
+  .vision-grid{
+    grid-template-columns:
+      1fr
+      1fr;
+  }
+
 }
 
 @media(max-width:700px){
-  .lang-switch{
-    margin-left:3px;
+
+  .links a:not(.keep){
+    display:none;
   }
 
-  .lang-switch button{
-    min-height:34px;
-    padding:6px 8px;
-    font-size:.63rem;
+  section{
+    padding:65px 0;
   }
+
+  .hero-grid{
+    padding:75px 0 68px;
+  }
+
+  .stats{
+    grid-template-columns:
+      1fr
+      1fr;
+  }
+
+  .profile-grid,
+  .vision-grid,
+  .choices,
+  .contact-grid{
+    grid-template-columns:1fr;
+  }
+
+  .footer{
+    flex-direction:column;
+    text-align:center;
+  }
+
 }
+
+@media(max-width:450px){
+
+  .stats,
+  .quick{
+    grid-template-columns:1fr;
+  }
+
+}
+
 </style>
+</head>
 
-<script>
-(function(){
 
-const shona = {
+<body>
 
-"Inauguration of":
-"Kugadzwa kwa",
 
-"as Sabhuku, Nyika Village":
-"saSabhuku weNyika Village",
+<header>
 
-"Nyika Village • Goromonzi District • Zimbabwe":
-"Nyika Village • Dunhu reGoromonzi • Zimbabwe",
+<nav class="wrap">
 
-"A gathering of family, traditional leadership, residents, friends and partners to mark a new chapter in the stewardship of Nyika Village.":
-"Kuungana kwemhuri, vatungamiri vechivanhu, vagari, shamwari nevadyidzani tichicherechedza kutanga kwechitsauko chitsva mukutungamirwa kweNyika Village.",
+<a
+class="brand"
+href="#top"
+>
+Nyika Village
+<small>
+28 August 2026
+</small>
+</a>
 
-"View Programme":
-"Ona Hurongwa",
 
-"Discover Our Village":
-"Ziva Musha Wedu",
+<div class="links">
 
-"Event Essentials":
-"Zvakakosha NezveZuva",
+<a href="#village">
+Our Village
+</a>
 
-"28 August":
-"28 Nyamavhuvhu",
+<a href="#programme">
+Programme
+</a>
 
-"Friday • Programme starts at 10:00 AM":
-"Chishanu • Hurongwa hunotanga na10:00 mangwanani",
+<a href="#directions">
+Directions
+</a>
 
-"Nyika Village, Goromonzi District":
-"Nyika Village, Dunhu reGoromonzi",
+<a href="#connect">
+Connect
+</a>
 
-"Our Village":
-"Musha Wedu",
+<a
+class="keep"
+href="https://maps.app.goo.gl/gQBqSuExSgi56f7M7"
+target="_blank"
+rel="noopener"
+>
+Map ↗
+</a>
 
-"Programme":
-"Hurongwa",
+</div>
 
-"Directions":
-"Nzira",
+</nav>
 
-"Connect":
-"Batana",
+</header>
 
-"Map ↗":
-"Mepu ↗",
 
-"Google Maps ↗":
-"Google Maps ↗",
 
-"Driving Guide":
-"Nzira Yekutyaira",
+<main>
 
-"Guest WiFi":
-"WiFi yeVaenzi",
 
-"Have Your Say":
-"Taura Pfungwa Dzako",
+<section
+class="hero"
+id="top"
+>
 
-"Nyika Village: resources, enterprise, people and ambition.":
-"Nyika Village: zviwanikwa, mabasa, vanhu nezvishuwo.",
+<div class="wrap hero-grid">
 
-"Nyika is not starting from zero. It already has people, productive land, water, livestock, household enterprise, infrastructure and a strong connection between families and their village.":
-"Nyika haisi kutangira pazero. Musha une vanhu, ivhu rinobereka, mvura, zvipfuyo, mabasa anoitwa nemhuri, zvivakwa pamwe nekubatana kwakasimba pakati pemhuri nemusha wavo.",
 
-"Nyika Village is a growing rural community of more than 100 households and over 250 adults, alongside a significant population of infants, children and young people. Electricity, expanding internet access and two perennial rivers provide an important foundation for a more connected, healthy and productive rural future.":
-"Nyika Village imusha wemaruwa uri kukura une mhuri dzinopfuura zana uye vanhu vakuru vanopfuura mazana maviri nemakumi mashanu, pamwe nevacheche, vana nevechidiki vakawanda. Magetsi, kuwedzera kweinternet uye nzizi mbiri dzinoyerera gore rose zvinopa hwaro hwakasimba hweramangwana rine kubatana, utano nekubudirira.",
+<div>
 
-"households forming the village community":
-"mhuri dzinoumba musha wedu",
+<div class="eyebrow">
+Nyika Village • Goromonzi District • Zimbabwe
+</div>
 
-"adults alongside children, youth and infants":
-"vanhu vakuru pamwe nevana, vechidiki nevacheche",
 
-"perennial rivers supporting productive activity":
-"nzizi dzinoyerera gore rose dzinotsigira mabasa ekurima",
+<h1>
 
-"Power":
-"Magetsi",
+Inauguration of
 
-"electricity connectivity across the village":
-"kubatana kwemagetsi mumusha",
+<em>
+Tawanda Kaseke
+</em>
 
-"Internet":
-"Internet",
+as Sabhuku, Nyika Village
 
-"expanding digital connectivity and rural WiFi":
-"kuwedzera kweinternet neWiFi yemumaruwa",
+</h1>
 
-"01 • PRODUCTIVE VILLAGE":
-"01 • MUSHA UNOBUDISA",
 
-"Agriculture and household enterprise":
-"Kurima neMabasa eMhuri",
+<p class="hero-text">
 
-"Village livelihoods span beef production, cattle, river-front gardening, fish farming, beekeeping, broilers, egg production and other household-based agricultural projects.":
-"Mararamiro emusha anosanganisira kupfuya mombe, magadheni ari pedyo nenzizi, kurima hove, kuchengeta nyuchi, huku dzebroiler, kugadzira mazai nezvimwe zvirongwa zvekurima zvinoitwa nemhuri.",
+A gathering of family, traditional leadership,
+residents, friends and partners to mark a new
+chapter in the stewardship of Nyika Village.
 
-"02 • NATURAL ENDOWMENT":
-"02 • ZVIWANIKWA ZVEMUSIKWA",
+</p>
 
-"Land, water, flora and fauna":
-"Ivhu, Mvura, Miti neMhuka",
 
-"Nyika is endowed with productive land, perennial water systems, indigenous vegetation and a rich rural environment. Development should unlock opportunity while protecting the natural assets that make the village valuable.":
-"Nyika ine ivhu rinobereka, nzizi dzinoyerera gore rose, miti yemuno uye nharaunda yakapfuma yezvisikwa. Budiriro inofanira kuvhura mikana ichichengetedza zviwanikwa zvinoita kuti musha ukoshese.",
+<div class="buttons">
 
-"03 • HEALTH & WELLBEING":
-"03 • UTANO NERARAMIRO",
+<a
+class="btn btn-gold"
+href="#programme"
+>
+View Programme
+</a>
 
-"Healthy people, stronger households":
-"Vanhu Vane Utano, Mhuri Dzakasimba",
+<a
+class="btn btn-outline"
+href="#village"
+>
+Discover Our Village
+</a>
 
-"Village development depends on health, prevention, wellbeing and access to trusted health information and services. Community-based health and wellness outreach can help improve awareness, early intervention, maternal and child wellbeing, prevention and connections to formal health services. Health must therefore grow alongside education, infrastructure, agriculture and livelihoods.":
-"Budiriro yemusha inotsamira pautano, kudzivirira zvirwere, kugara zvakanaka uye kuwana ruzivo nemabasa ehutano anovimbika. Zvirongwa zvehutano zvinounzwa pedyo nevanhu zvinogona kuvandudza ruzivo, kuona matambudziko nekukurumidza, utano hwemadzimai nevana, kudzivirira zvirwere nekubatanidza vanhu nemasangano ehutano. Utano hunofanira kukura pamwe nedzidzo, zvivakwa, kurima nemararamiro.",
+</div>
 
-"04 • DEVELOPMENT PHILOSOPHY":
-"04 • NZIRA YEDU YEBUDIRIRO",
 
-"Modernise without losing what matters":
-"Kuvandudza Tisingarasikirwi Nezvinokosha",
+</div>
 
-"The goal is not to turn rural life into an urban imitation. It is to build a modern, sustainable and connected rural community in which infrastructure, knowledge and institutions strengthen local livelihoods while preserving community identity.":
-"Chinangwa hachisi kushandura hupenyu hwemumaruwa kuti huve sekumaguta. Chinangwa ndechekuvaka musha wemaruwa wemazuva ano, wakabatana uye unochengetedza ramangwana, umo zvivakwa, ruzivo nemasangano zvinosimbisa mararamiro evanhu tichichengetedza hunhu nemagariro emusha.",
 
-"The Nyika We Aspire to Build":
-"Nyika Yatinoda Kuvaka",
 
-"Progressive development, built around real village needs.":
-"Budiriro Inoenderana Nezvinodiwa Nemusha.",
+<aside class="event-card">
 
-"Each initiative should solve a practical problem and strengthen the wider village system rather than exist as an isolated project.":
-"Chirongwa chega chega chinofanira kugadzirisa dambudziko chairo uye kusimbisa musha wese, kwete kungova purojekiti yakamira yoga.",
+<div class="eyebrow">
+Event Essentials
+</div>
 
-"Accessible early childhood development giving young children a stronger educational start.":
-"ECD iri pedyo nevanhu inopa vana vadiki hwaro hwakasimba hwedzidzo.",
 
-"Library & Literacy":
-"Raibhurari neKugona Kuverenga",
+<div class="date">
 
-"A community reading and learning space serving children, youths and adults.":
-"Nzvimbo yemusha yekuverenga nekudzidza inoshandira vana, vechidiki nevanhu vakuru.",
+28 August
 
-"Agriculture":
-"Kurima",
+<br>
 
-"Productive projects that strengthen households, improve output and connect farmers to opportunity.":
-"Zvirongwa zvinobudisa zvinobatsira mhuri, kuwedzera goho nekubatanidza varimi nemikana.",
+2026
 
-"Roads & Services":
-"Migwagwa neMabasa",
+</div>
 
-"Better roads and basic services improving access, mobility and economic activity.":
-"Migwagwa iri nani nemabasa anokosha zvinovandudza kufamba, kusvika kunzvimbo nekusimudzira upfumi.",
 
-"Connectivity for All":
-"Internet neDigital kune Wese",
+<p>
 
-"Affordable digital access supporting education, markets, communication, financial services and enterprise.":
-"Internet inodhura zvine mwero inotsigira dzidzo, misika, kutaurirana, mabasa emari nemabhizimisi.",
+<strong>
 
-"Youth & Skills":
-"Vechidiki neUnyanzvi",
+Friday • Programme starts at 10:00 AM
 
-"Practical capability programmes preparing young people for new opportunities.":
-"Zvirongwa zveunyanzvi zvinogadzirira vechidiki mikana mitsva.",
+</strong>
 
-"Health & Wellness":
-"Utano neWellness",
+</p>
 
-"Community health, prevention, wellness and outreach initiatives that improve access to trusted information and appropriate services.":
-"Zvirongwa zvehutano, kudzivirira zvirwere, wellness neoutreach zvinovandudza kuwanikwa kweruzivo rwakavimbika nemabasa akakodzera.",
 
-"Community Platforms":
-"Nzvimbo dzeNharaunda",
+<p>
 
-"Spaces for meetings, learning, health outreach, digital services and community participation.":
-"Nzvimbo dzemisangano, kudzidza, health outreach, digital services nekutora chikamu kwevanhu.",
+Nyika Village,
+Goromonzi District
 
-"Local Solutions":
-"Mhinduro Dzemuno",
+</p>
 
-"Development designed with villagers, family, diaspora, institutions and partners.":
-"Budiriro inorongwa pamwe nevagari, mhuri, diaspora, masangano nevadyidzani.",
 
-"Programme of the Day":
-"Hurongwa hweZuva",
+<div class="quick">
 
-"A dignified, simple ceremony.":
-"Mhemberero Ine Rukudzo uye Iri Nyore.",
+<a
+href="https://maps.app.goo.gl/gQBqSuExSgi56f7M7"
+target="_blank"
+rel="noopener"
+>
+Google Maps ↗
+</a>
 
-"Formal proceedings begin at 10:00 AM. The programme remains respectful of customary protocol and may be refined with traditional leadership.":
-"Zviitiko zviri pamutemo zvinotanga na10:00 mangwanani. Hurongwa hunoremekedza tsika dzechivanhu uye hunogona kugadziriswa pamwe nevatungamiri vechivanhu.",
 
-"Guest arrival":
-"Kusvika kweVaenzi",
+<a href="#directions">
+Driving Guide
+</a>
 
-"Welcome, seating and orientation.":
-"Kugamuchirwa, kugara nekutungamirirwa.",
 
-"Opening of proceedings":
-"Kuvhurwa kweZviitiko",
+<a href="#connect">
+Guest WiFi
+</a>
 
-"Introductions and recognition of traditional leadership.":
-"Kusuma vanhu nekucherechedza vatungamiri vechivanhu.",
 
-"Family and village history":
-"Nhoroondo Yemhuri neMusha",
+<a href="#say">
+Have Your Say
+</a>
 
-"Lineage, context and remembrance.":
-"Dzinza, nhoroondo nekurangarira.",
+</div>
 
-"Traditional inauguration proceedings":
-"Zviitiko zveChivanhu zveKugadzwa",
 
-"Customary protocol as directed by traditional leadership.":
-"Tsika dzekugadzwa sezvinotungamirirwa nevatungamiri vechivanhu.",
+</aside>
 
-"Addresses and acceptance":
-"Mashoko neKugamuchira Basa",
 
-"Invited messages and inauguration address.":
-"Mashoko evaenzi vakakokwa nemashoko ekugamuchira basa.",
+</div>
 
-"Official photographs":
-"Mapikicha ePamutemo",
+</section>
 
-"Family, traditional leadership, community and guests.":
-"Mhuri, vatungamiri vechivanhu, vagari nevaenzi.",
 
-"Community meal and celebration":
-"Kudya pamwe neKupemberera",
 
-"Lunch and informal engagement.":
-"Kudya pamwe nekutandara.",
+<section id="village">
 
-"Travelling from Harare to Nyika Village.":
-"Kubva kuHarare Kuenda kuNyika Village.",
+<div class="wrap">
 
-"Use Google Maps for the final approach or follow the simple route below.":
-"Shandisai Google Maps pachikamu chekupedzisira cherwendo kana kutevera nzira iri pasi apa.",
 
-"Travel from Harare along Mutare Road through Ruwa.":
-"Kubva kuHarare, fambai neMutare Road muchipfuura Ruwa.",
+<div class="heading">
 
-"Approximately 5 km after Ruwa,":
-"Mushure meRuwa nemakiromita anenge 5,",
+<div class="eyebrow">
+Our Village
+</div>
 
-"turn LEFT at the Goromonzi turn-off.":
-"tenderai KURUBOSHWE paGoromonzi turn-off.",
 
-"Continue for approximately 11 km towards Goromonzi.":
-"Rambai muchifamba makiromita anenge 11 muchienda kuGoromonzi.",
+<h2>
 
-"At Goromonzi Police,":
-"PaGoromonzi Police,",
+Nyika Village:
+resources, enterprise,
+people and ambition.
 
-"turn RIGHT":
-"tenderai KURUDYI",
+</h2>
 
-"and proceed down towards Kasema.":
-"muchidzika muchienda kuKasema.",
 
-"Continue towards Rusike Shops.":
-"Rambai muchienda kuRusike Shops.",
+<p>
 
-"After passing Rusike Shops, look out for the beacon and":
-"Mushure meRusike Shops, tarisai beacon mozoti",
+Nyika is not starting from zero.
 
-"turn RIGHT.":
-"tenderai KURUDYI.",
+It already has people, productive land,
+water, livestock, household enterprise,
+infrastructure and a strong connection
+between families and their village.
 
-"From there, follow the Google Maps location for the final approach to the venue.":
-"Kubva ipapo, teverai Google Maps kusvika panzvimbo yemhemberero.",
+</p>
 
-"If uncertain, return to Rusike Shops and ask for":
-"Kana musina chokwadi, dzokerai kuRusike Shops mobvunza",
+</div>
 
-"Tawanda Kaseke's place":
-"kwaTawanda Kaseke",
 
-"in Nyika Village.":
-"muNyika Village.",
 
-"Official location pin":
-"Pin Yepamutemo Yenzvimbo",
+<div class="card intro">
 
-"Use the location pin for the final approach to the venue.":
-"Shandisai pin iyi pachikamu chekupedzisira cherwendo.",
 
-"Open Google Maps ↗":
-"Vhura Google Maps ↗",
+<p class="lead">
 
-"Need Assistance?":
-"Munoda Rubatsiro?",
+Nyika Village is a growing rural community
+of more than 100 households and over
+250 adults, alongside a significant population
+of infants, children and young people.
 
-"Direction contacts":
-"Vanobatsira Nezvenzira",
+Electricity, expanding internet access and
+two perennial rivers provide an important
+foundation for a more connected, healthy
+and productive rural future.
 
-"If you need assistance while travelling to the village, please contact one of the following village representatives.":
-"Kana muchida rubatsiro muri munzira kuenda kumusha, fonerai mumwe wevamiriri vemusha vari pasi apa.",
+</p>
 
-"Village Committee Secretary":
-"Munyori weKomiti yeMusha",
 
-"Connect to the":
-"Batanai pa",
+<div class="stats">
 
-"network and enter the hotspot login code when the portal opens.":
-"wobva waisa code kana portal yavhurika.",
 
-"Free event connectivity for guests at the venue.":
-"WiFi yemahara yevaenzi vari panzvimbo yemhemberero.",
+<div class="stat">
 
-"Have Your Say on Nyika":
-"Taura Pfungwa Dzako Pamusoro peNyika",
+<b>
+100+
+</b>
 
-"What would you like to see for our village?":
-"Chii Chamungada Kuona Chichiitwa Mumusha Wedu?",
+<span>
+households forming the village community
+</span>
 
-"Nyika grows through the ideas, experience and contribution of its people, family, friends and partners. Share an idea, suggest a project, offer skills, contribute or raise an issue directly with us.":
-"Nyika inokura nemazano, ruzivo nerubatsiro rwevagari, mhuri, shamwari nevadyidzani. Tumirai zano, kurudzirai purojekiti, ipai unyanzvi, batsirai kana kusimudza nyaya inoda kutariswa.",
+</div>
 
-"Share an Idea":
-"Tumira Zano",
 
-"Suggest a Project":
-"Kurudzira Purojekiti",
 
-"Contribute or Partner":
-"Batsira kana Batirana Nesu",
+<div class="stat">
 
-"Volunteer Skills":
-"Ipa Unyanzvi Hwako",
+<b>
+250+
+</b>
 
-"Raise an Issue":
-"Simudza Nyaya",
+<span>
+adults alongside children,
+youth and infants
+</span>
 
-"Other Thought":
-"Imwe Pfungwa",
+</div>
 
-"Dedicated WhatsApp:":
-"WhatsApp yeNyika:",
 
-"“A connected, productive, educated, healthy and sustainable Nyika Village.”":
-"“Nyika Village yakabatana, inobudisa, yakadzidza, ine utano uye inochengetedza ramangwana.”",
 
-"Tradition • Service • Community":
-"Tsika • Kushandira Vanhu • Kubatana",
+<div class="stat">
 
-"Goromonzi District, Zimbabwe":
-"Dunhu reGoromonzi, Zimbabwe",
+<b>
+2
+</b>
 
-"Inauguration • Friday 28 August 2026 • 10:00 AM":
-"Kugadzwa • Chishanu 28 Nyamavhuvhu 2026 • 10:00 mangwanani"
-};
+<span>
+perennial rivers supporting
+productive activity
+</span>
 
-const originalNodes = [];
+</div>
 
-function normalise(value){
-  return value.replace(/\s+/g," ").trim();
-}
 
-function collectTextNodes(){
-  const walker = document.createTreeWalker(
-    document.body,
-    NodeFilter.SHOW_TEXT
-  );
 
-  let node;
+<div class="stat">
 
-  while(node = walker.nextNode()){
+<b>
+Power
+</b>
 
-    const parent = node.parentElement;
+<span>
+electricity connectivity
+across the village
+</span>
 
-    if(!parent) continue;
+</div>
 
-    if(
-      parent.tagName === "SCRIPT" ||
-      parent.tagName === "STYLE"
-    ) continue;
 
-    const text = normalise(node.nodeValue);
 
-    if(!text) continue;
+<div class="stat">
 
-    originalNodes.push({
-      node: node,
-      raw: node.nodeValue,
-      english: text
-    });
-  }
-}
+<b>
+Internet
+</b>
 
-function applyShona(){
+<span>
+expanding digital connectivity
+and rural WiFi
+</span>
 
-  originalNodes.forEach(item => {
+</div>
 
-    if(shona[item.english]){
 
-      const leading =
-        item.raw.match(/^\s*/)[0];
+</div>
 
-      const trailing =
-        item.raw.match(/\s*$/)[0];
 
-      item.node.nodeValue =
-        leading +
-        shona[item.english] +
-        trailing;
-    }
-  });
+</div>
 
-  document.documentElement.lang = "sn";
 
-  document.title =
-    "Kugadzwa kwaTawanda Kaseke saSabhuku weNyika Village";
-}
 
-function applyEnglish(){
+<div class="profile-grid">
 
-  originalNodes.forEach(item => {
-    item.node.nodeValue = item.raw;
-  });
 
-  document.documentElement.lang = "en";
+<article class="profile">
 
-  document.title =
-    "Inauguration of Tawanda Kaseke as Sabhuku, Nyika Village";
-}
+<div class="number">
+01 • PRODUCTIVE VILLAGE
+</div>
 
-function setLanguage(language){
 
-  if(language === "sn"){
-    applyShona();
-  }
-  else{
-    applyEnglish();
-    language = "en";
-  }
+<h3>
+Agriculture and household enterprise
+</h3>
 
-  document
-    .getElementById("lang-en")
-    .classList.toggle(
-      "active",
-      language === "en"
-    );
 
-  document
-    .getElementById("lang-sn")
-    .classList.toggle(
-      "active",
-      language === "sn"
-    );
+<p>
 
-  try{
-    localStorage.setItem(
-      "nyika-language",
-      language
-    );
-  }
-  catch(error){}
-}
+Village livelihoods span beef production,
+cattle, river-front gardening, fish farming,
+beekeeping, broilers, egg production
+and other household-based agricultural projects.
 
-collectTextNodes();
+</p>
 
-const navLinks =
-  document.querySelector("nav .links");
+</article>
 
-if(navLinks){
 
-  const switcher =
-    document.createElement("div");
 
-  switcher.className =
-    "lang-switch";
+<article class="profile">
 
-  switcher.setAttribute(
-    "aria-label",
-    "Choose language"
-  );
+<div class="number">
+02 • NATURAL ENDOWMENT
+</div>
 
-  switcher.innerHTML =
-    '<button type="button" id="lang-en">ENGLISH</button>' +
-    '<button type="button" id="lang-sn">SHONA</button>';
 
-  navLinks.appendChild(switcher);
-}
+<h3>
+Land, water, flora and fauna
+</h3>
 
-document
-  .getElementById("lang-en")
-  .addEventListener(
-    "click",
-    function(){
-      setLanguage("en");
-    }
-  );
 
-document
-  .getElementById("lang-sn")
-  .addEventListener(
-    "click",
-    function(){
-      setLanguage("sn");
-    }
-  );
+<p>
 
-let savedLanguage = "en";
+Nyika is endowed with productive land,
+perennial water systems, indigenous vegetation
+and a rich rural environment.
 
-try{
-  savedLanguage =
-    localStorage.getItem(
-      "nyika-language"
-    ) || "en";
-}
-catch(error){}
+Development should unlock opportunity while
+protecting the natural assets that make
+the village valuable.
 
-setLanguage(savedLanguage);
+</p>
 
-})();
-</script>
+</article>
+
+
+
+<article class="profile">
+
+<div class="number">
+03 • HEALTH & WELLBEING
+</div>
+
+
+<h3>
+Healthy people, stronger households
+</h3>
+
+
+<p>
+
+Village development depends on health,
+prevention, wellbeing and access to trusted
+health information and services.
+
+Community-based health and wellness outreach
+can help improve awareness, early intervention,
+maternal and child wellbeing, prevention and
+connections to formal health services.
+
+Health must therefore grow alongside education,
+infrastructure, agriculture and livelihoods.
+
+</p>
+
+</article>
+
+
+
+<article class="profile">
+
+<div class="number">
+04 • DEVELOPMENT PHILOSOPHY
+</div>
+
+
+<h3>
+Modernise without losing what matters
+</h3>
+
+
+<p>
+
+The goal is not to turn rural life
+into an urban imitation.
+
+It is to build a modern, sustainable
+and connected rural community in which
+infrastructure, knowledge and institutions
+strengthen local livelihoods while preserving
+community identity.
+
+</p>
+
+</article>
+
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<section class="vision">
+
+<div class="wrap">
+
+
+<div class="heading">
+
+<div class="eyebrow">
+The Nyika We Aspire to Build
+</div>
+
+
+<h2>
+
+Progressive development,
+built around real village needs.
+
+</h2>
+
+
+<p>
+
+Each initiative should solve a practical
+problem and strengthen the wider village
+system rather than exist as an isolated project.
+
+</p>
+
+</div>
+
+
+
+<div class="vision-grid">
+
+
+<article class="vision-card">
+
+<div class="icon">
+01
+</div>
+
+<h3>
+ECD
+</h3>
+
+<p>
+
+Accessible early childhood development
+giving young children a stronger
+educational start.
+
+</p>
+
+</article>
+
+
+
+<article class="vision-card">
+
+<div class="icon">
+02
+</div>
+
+<h3>
+Library & Literacy
+</h3>
+
+<p>
+
+A community reading and learning space
+serving children, youths and adults.
+
+</p>
+
+</article>
+
+
+
+<article class="vision-card">
+
+<div class="icon">
+03
+</div>
+
+<h3>
+Agriculture
+</h3>
+
+<p>
+
+Productive projects that strengthen
+households, improve output and connect
+farmers to opportunity.
+
+</p>
+
+</article>
+
+
+
+<article class="vision-card">
+
+<div class="icon">
+04
+</div>
+
+<h3>
+Roads & Services
+</h3>
+
+<p>
+
+Better roads and basic services
+improving access, mobility and
+economic activity.
+
+</p>
+
+</article>
+
+
+
+<article class="vision-card">
+
+<div class="icon">
+05
+</div>
+
+<h3>
+Connectivity for All
+</h3>
+
+<p>
+
+Affordable digital access supporting
+education, markets, communication,
+financial services and enterprise.
+
+</p>
+
+</article>
+
+
+
+<article class="vision-card">
+
+<div class="icon">
+06
+</div>
+
+<h3>
+Youth & Skills
+</h3>
+
+<p>
+
+Practical capability programmes
+preparing young people for
+new opportunities.
+
+</p>
+
+</article>
+
+
+
+<article class="vision-card">
+
+<div class="icon">
+07
+</div>
+
+<h3>
+Health & Wellness
+</h3>
+
+<p>
+
+Community health, prevention,
+wellness and outreach initiatives
+that improve access to trusted
+information and appropriate services.
+
+</p>
+
+</article>
+
+
+
+<article class="vision-card">
+
+<div class="icon">
+08
+</div>
+
+<h3>
+Community Platforms
+</h3>
+
+<p>
+
+Spaces for meetings, learning,
+health outreach, digital services
+and community participation.
+
+</p>
+
+</article>
+
+
+
+<article class="vision-card">
+
+<div class="icon">
+09
+</div>
+
+<h3>
+Local Solutions
+</h3>
+
+<p>
+
+Development designed with villagers,
+family, diaspora, institutions
+and partners.
+
+</p>
+
+</article>
+
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<section id="programme">
+
+<div class="wrap programme">
+
+
+<div class="heading">
+
+<div class="eyebrow">
+Programme of the Day
+</div>
+
+
+<h2>
+
+A dignified,
+simple ceremony.
+
+</h2>
+
+
+<p>
+
+Formal proceedings begin at 10:00 AM.
+
+The programme remains respectful
+of customary protocol and may be refined
+with traditional leadership.
+
+</p>
+
+</div>
+
+
+
+<div class="timeline">
+
+
+<div class="row">
+
+<time>
+09:15
+</time>
+
+<div>
+
+<strong>
+Guest arrival
+</strong>
+
+<span>
+Welcome, seating and orientation.
+</span>
+
+</div>
+
+</div>
+
+
+
+<div class="row">
+
+<time>
+10:00
+</time>
+
+<div>
+
+<strong>
+Opening of proceedings
+</strong>
+
+<span>
+Introductions and recognition
+of traditional leadership.
+</span>
+
+</div>
+
+</div>
+
+
+
+<div class="row">
+
+<time>
+10:30
+</time>
+
+<div>
+
+<strong>
+Family and village history
+</strong>
+
+<span>
+Lineage, context and remembrance.
+</span>
+
+</div>
+
+</div>
+
+
+
+<div class="row">
+
+<time>
+11:00
+</time>
+
+<div>
+
+<strong>
+Traditional inauguration proceedings
+</strong>
+
+<span>
+Customary protocol as directed
+by traditional leadership.
+</span>
+
+</div>
+
+</div>
+
+
+
+<div class="row">
+
+<time>
+12:00
+</time>
+
+<div>
+
+<strong>
+Addresses and acceptance
+</strong>
+
+<span>
+Invited messages and inauguration address.
+</span>
+
+</div>
+
+</div>
+
+
+
+<div class="row">
+
+<time>
+13:00
+</time>
+
+<div>
+
+<strong>
+Official photographs
+</strong>
+
+<span>
+Family, traditional leadership,
+community and guests.
+</span>
+
+</div>
+
+</div>
+
+
+
+<div class="row">
+
+<time>
+13:30
+</time>
+
+<div>
+
+<strong>
+Community meal and celebration
+</strong>
+
+<span>
+Lunch and informal engagement.
+</span>
+
+</div>
+
+</div>
+
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<section
+class="directions"
+id="directions"
+>
+
+<div class="wrap">
+
+
+<div class="heading">
+
+
+<div class="eyebrow">
+Directions
+</div>
+
+
+<h2>
+
+Travelling from Harare
+to Nyika Village.
+
+</h2>
+
+
+<p>
+
+Use Google Maps for the final approach
+or follow the simple route below.
+
+</p>
+
+
+</div>
+
+
+
+<div class="direction-grid">
+
+
+<div class="route">
+
+<ol>
+
+
+<li>
+
+Travel from Harare along
+Mutare Road through Ruwa.
+
+</li>
+
+
+<li>
+
+Approximately 5 km after Ruwa,
+<strong>
+turn LEFT at the Goromonzi turn-off.
+</strong>
+
+</li>
+
+
+<li>
+
+Continue for approximately 11 km
+towards Goromonzi.
+
+</li>
+
+
+<li>
+
+At Goromonzi Police,
+<strong>
+turn RIGHT
+</strong>
+and proceed down towards Kasema.
+
+</li>
+
+
+<li>
+
+Continue towards Rusike Shops.
+
+</li>
+
+
+<li>
+
+After passing Rusike Shops,
+look out for the beacon and
+<strong>
+turn RIGHT.
+</strong>
+
+</li>
+
+
+<li>
+
+From there,
+follow the Google Maps location
+for the final approach to the venue.
+
+</li>
+
+
+<li>
+
+If uncertain,
+return to Rusike Shops
+and ask for
+<strong>
+Tawanda Kaseke's place
+</strong>
+in Nyika Village.
+
+</li>
+
+
+</ol>
+
+</div>
+
+
+
+<div class="mapbox">
+
+
+<div class="eyebrow">
+Google Maps
+</div>
+
+
+<h3>
+Official location pin
+</h3>
+
+
+<p>
+
+Use the location pin for
+the final approach to the venue.
+
+</p>
+
+
+<a
+class="btn btn-gold"
+href="https://maps.app.goo.gl/gQBqSuExSgi56f7M7"
+target="_blank"
+rel="noopener"
+>
+Open Google Maps ↗
+</a>
+
+
+</div>
+
+
+</div>
+
+
+
+<div class="contact-panel">
+
+
+<div class="eyebrow">
+Need Assistance?
+</div>
+
+
+<h3>
+Direction contacts
+</h3>
+
+
+<p class="contact-intro">
+
+If you need assistance while travelling
+to the village, please contact one of
+the following village representatives.
+
+</p>
+
+
+
+<div class="contact-grid">
+
+
+<div class="contact-card">
+
+<strong>
+Edwin “Ringi” Kaseke
+</strong>
+
+<span class="contact-role">
+Village Committee Secretary
+</span>
+
+<a
+class="contact-number"
+href="tel:0773909072"
+>
+077 390 9072
+</a>
+
+</div>
+
+
+
+<div class="contact-card">
+
+<strong>
+George Chakanza
+</strong>
+
+<span class="contact-role">
+Jinda raSabhuku Nyika
+</span>
+
+<a
+class="contact-number"
+href="tel:0775668512"
+>
+077 566 8512
+</a>
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<section id="connect">
+
+<div class="wrap connect">
+
+
+<article class="wifi">
+
+
+<div class="eyebrow">
+Guest WiFi
+</div>
+
+
+<h3>
+Village Hotspot
+</h3>
+
+
+<p>
+
+Connect to the
+<strong>
+Village Hotspot
+</strong>
+network and enter the hotspot
+login code when the portal opens.
+
+</p>
+
+
+<div class="code">
+9359409
+</div>
+
+
+<p>
+
+Free event connectivity
+for guests at the venue.
+
+</p>
+
+
+</article>
+
+
+
+<article
+class="card listen"
+id="say"
+>
+
+
+<div
+class="eyebrow"
+style="color:#a57c33"
+>
+Have Your Say on Nyika
+</div>
+
+
+<h3>
+
+What would you like
+to see for our village?
+
+</h3>
+
+
+<p>
+
+Nyika grows through the ideas,
+experience and contribution of its people,
+family, friends and partners.
+
+Share an idea, suggest a project,
+offer skills, contribute or raise
+an issue directly with us.
+
+</p>
+
+
+
+<div class="choices">
+
+
+<a
+class="choice"
+href="https://wa.me/263775103375?text=Hello%20Nyika%20Village.%20I%20would%20like%20to%20share%20an%20idea%20for%20the%20village%3A"
+target="_blank"
+rel="noopener"
+>
+Share an Idea
+<span>↗</span>
+</a>
+
+
+
+<a
+class="choice"
+href="https://wa.me/263775103375?text=Hello%20Nyika%20Village.%20I%20would%20like%20to%20suggest%20a%20project%20for%20Nyika%20Village%3A"
+target="_blank"
+rel="noopener"
+>
+Suggest a Project
+<span>↗</span>
+</a>
+
+
+
+<a
+class="choice"
+href="https://wa.me/263775103375?text=Hello%20Nyika%20Village.%20I%20would%20like%20to%20contribute%20or%20explore%20supporting%20a%20village%20initiative%3A"
+target="_blank"
+rel="noopener"
+>
+Contribute or Partner
+<span>↗</span>
+</a>
+
+
+
+<a
+class="choice"
+href="https://wa.me/263775103375?text=Hello%20Nyika%20Village.%20I%20would%20like%20to%20volunteer%20or%20offer%20my%20skills%20to%20support%20the%20village%3A"
+target="_blank"
+rel="noopener"
+>
+Volunteer Skills
+<span>↗</span>
+</a>
+
+
+
+<a
+class="choice"
+href="https://wa.me/263775103375?text=Hello%20Nyika%20Village.%20I%20would%20like%20to%20raise%20a%20community%20issue%20or%20suggestion%3A"
+target="_blank"
+rel="noopener"
+>
+Raise an Issue
+<span>↗</span>
+</a>
+
+
+
+<a
+class="choice"
+href="https://wa.me/263775103375?text=Hello%20Nyika%20Village.%20I%20would%20like%20to%20share%20the%20following%20thought%3A"
+target="_blank"
+rel="noopener"
+>
+Other Thought
+<span>↗</span>
+</a>
+
+
+</div>
+
+
+
+<p>
+
+<strong>
+Dedicated WhatsApp:
+</strong>
+
++263 77 510 3375
+
+</p>
+
+
+</article>
+
+
+</div>
+
+</section>
+
+
+
+<section class="closing">
+
+<div class="wrap">
+
+
+<blockquote>
+
+“A connected, productive,
+educated, healthy and sustainable
+Nyika Village.”
+
+</blockquote>
+
+
+<p>
+
+Tradition • Service • Community
+
+</p>
+
+
+</div>
+
+</section>
+
+
+</main>
+
+
+
+<footer>
+
+
+<div class="wrap footer">
+
+
+<div>
+
+<strong>
+Nyika Village
+</strong>
+
+<br>
+
+<small>
+Goromonzi District, Zimbabwe
+</small>
+
+</div>
+
+
+<div>
+
+<small>
+
+Inauguration • Friday 28 August 2026 • 10:00 AM
+
+</small>
+
+</div>
+
+
+</div>
+
+
+</footer>
+
+
+</body>
+</html>
